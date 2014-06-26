@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>MorseCode.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>MorseCodeKeyboard.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>yolo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>754B28A5194F872C0080E630</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>754B28B7194F872C0080E630</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>754B28CB194F878B0080E630</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7550E129195C906600ECD823</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7574F492195C783900257266</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

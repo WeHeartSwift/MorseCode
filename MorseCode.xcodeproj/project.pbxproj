@@ -12,6 +12,8 @@
 		754B28B1194F872C0080E630 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 754B28AF194F872C0080E630 /* Main.storyboard */; };
 		754B28B3194F872C0080E630 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 754B28B2194F872C0080E630 /* Images.xcassets */; };
 		754B28BF194F872C0080E630 /* MorseCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754B28BE194F872C0080E630 /* MorseCodeTests.swift */; };
+		7574F498195C783900257266 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7574F497195C783900257266 /* KeyboardViewController.swift */; };
+		7574F49B195C783900257266 /* weheartswift.com.MorseCode.MorseCodeKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7574F493195C783900257266 /* weheartswift.com.MorseCode.MorseCodeKeyboard.appex */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,7 +24,35 @@
 			remoteGlobalIDString = 754B28A5194F872C0080E630;
 			remoteInfo = MorseCode;
 		};
+		7574F499195C783900257266 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 754B289E194F872C0080E630 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7574F492195C783900257266;
+			remoteInfo = MorseCodeKeyboard;
+		};
+		7574F49C195C783900257266 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 754B289E194F872C0080E630 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7574F492195C783900257266;
+			remoteInfo = MorseCodeKeyboard;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		754B28DA194F878B0080E630 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7574F49B195C783900257266 /* weheartswift.com.MorseCode.MorseCodeKeyboard.appex in Embed App Extensions */
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		754B28A6194F872C0080E630 /* MorseCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MorseCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,6 +64,9 @@
 		754B28B8194F872C0080E630 /* MorseCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MorseCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		754B28BD194F872C0080E630 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		754B28BE194F872C0080E630 /* MorseCodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorseCodeTests.swift; sourceTree = "<group>"; };
+		7574F493195C783900257266 /* weheartswift.com.MorseCode.MorseCodeKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = weheartswift.com.MorseCode.MorseCodeKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7574F496195C783900257266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7574F497195C783900257266 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +84,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7550E127195C906600ECD823 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7574F490195C783900257266 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -59,6 +106,7 @@
 			children = (
 				754B28A8194F872C0080E630 /* MorseCode */,
 				754B28BB194F872C0080E630 /* MorseCodeTests */,
+				7574F494195C783900257266 /* MorseCodeKeyboard */,
 				754B28A7194F872C0080E630 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,6 +116,7 @@
 			children = (
 				754B28A6194F872C0080E630 /* MorseCode.app */,
 				754B28B8194F872C0080E630 /* MorseCodeTests.xctest */,
+				7574F493195C783900257266 /* weheartswift.com.MorseCode.MorseCodeKeyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,6 +158,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		7574F494195C783900257266 /* MorseCodeKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				7574F497195C783900257266 /* KeyboardViewController.swift */,
+				7574F495195C783900257266 /* Supporting Files */,
+			);
+			path = MorseCodeKeyboard;
+			sourceTree = "<group>";
+		};
+		7574F495195C783900257266 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7574F496195C783900257266 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,10 +185,15 @@
 				754B28A2194F872C0080E630 /* Sources */,
 				754B28A3194F872C0080E630 /* Frameworks */,
 				754B28A4194F872C0080E630 /* Resources */,
+				754B28DA194F878B0080E630 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7574F49A195C783900257266 /* PBXTargetDependency */,
+				7574F49D195C783900257266 /* PBXTargetDependency */,
+				7550E131195C906600ECD823 /* PBXTargetDependency */,
+				7550E134195C906600ECD823 /* PBXTargetDependency */,
 			);
 			name = MorseCode;
 			productName = MorseCode;
@@ -147,6 +218,23 @@
 			productReference = 754B28B8194F872C0080E630 /* MorseCodeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		7574F492195C783900257266 /* MorseCodeKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7574F49E195C783900257266 /* Build configuration list for PBXNativeTarget "MorseCodeKeyboard" */;
+			buildPhases = (
+				7574F48F195C783900257266 /* Sources */,
+				7574F490195C783900257266 /* Frameworks */,
+				7574F491195C783900257266 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MorseCodeKeyboard;
+			productName = MorseCodeKeyboard;
+			productReference = 7574F493195C783900257266 /* weheartswift.com.MorseCode.MorseCodeKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -162,6 +250,12 @@
 					754B28B7194F872C0080E630 = {
 						CreatedOnToolsVersion = 6.0;
 						TestTargetID = 754B28A5194F872C0080E630;
+					};
+					7550E129195C906600ECD823 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					7574F492195C783900257266 = {
+						CreatedOnToolsVersion = 6.0;
 					};
 				};
 			};
@@ -180,6 +274,7 @@
 			targets = (
 				754B28A5194F872C0080E630 /* MorseCode */,
 				754B28B7194F872C0080E630 /* MorseCodeTests */,
+				7574F492195C783900257266 /* MorseCodeKeyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -195,6 +290,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		754B28B6194F872C0080E630 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7550E128195C906600ECD823 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7574F491195C783900257266 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -221,6 +330,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7550E126195C906600ECD823 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7574F48F195C783900257266 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7574F498195C783900257266 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -228,6 +352,16 @@
 			isa = PBXTargetDependency;
 			target = 754B28A5194F872C0080E630 /* MorseCode */;
 			targetProxy = 754B28B9194F872C0080E630 /* PBXContainerItemProxy */;
+		};
+		7574F49A195C783900257266 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7574F492195C783900257266 /* MorseCodeKeyboard */;
+			targetProxy = 7574F499195C783900257266 /* PBXContainerItemProxy */;
+		};
+		7574F49D195C783900257266 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7574F492195C783900257266 /* MorseCodeKeyboard */;
+			targetProxy = 7574F49C195C783900257266 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -380,6 +514,32 @@
 			};
 			name = Release;
 		};
+		7574F49F195C783900257266 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MorseCodeKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "weheartswift.com.MorseCode.$(TARGET_NAME:rfc1034identifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7574F4A0195C783900257266 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MorseCodeKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "weheartswift.com.MorseCode.$(TARGET_NAME:rfc1034identifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -399,6 +559,7 @@
 				754B28C4194F872C0080E630 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		754B28C5194F872C0080E630 /* Build configuration list for PBXNativeTarget "MorseCodeTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +568,16 @@
 				754B28C7194F872C0080E630 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7574F49E195C783900257266 /* Build configuration list for PBXNativeTarget "MorseCodeKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7574F49F195C783900257266 /* Debug */,
+				7574F4A0195C783900257266 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
