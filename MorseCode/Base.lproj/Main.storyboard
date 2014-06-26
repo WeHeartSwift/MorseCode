@@ -27,7 +27,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="xfs-EA-J4T" secondAttribute="centerX" constant="-0.5" id="4Tm-SS-Pzf"/>
+                            <constraint firstAttribute="centerX" secondItem="xfs-EA-J4T" secondAttribute="centerX" id="dNW-je-rxy"/>
                             <constraint firstAttribute="centerY" secondItem="xfs-EA-J4T" secondAttribute="centerY" id="pSW-Gs-hd4"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>

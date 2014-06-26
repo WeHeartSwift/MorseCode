@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 class KeyboardViewController: UIInputViewController {
     
     var nextKeyboardButton: UIButton!
@@ -43,21 +45,21 @@ class KeyboardViewController: UIInputViewController {
     }
     
     func addNextKeyboardButton() {
-        self.nextKeyboardButton = UIButton.buttonWithType(.System) as UIButton
+        nextKeyboardButton = UIButton.buttonWithType(.System) as UIButton
         
-        self.nextKeyboardButton.setTitle(NSLocalizedString("Next Keyboard", comment: "Title for 'Next Keyboard' button"), forState: .Normal)
-        self.nextKeyboardButton.sizeToFit()
-        self.nextKeyboardButton.setTranslatesAutoresizingMaskIntoConstraints(false)
+        nextKeyboardButton.setTitle(NSLocalizedString("Next Keyboard", comment: "Title for 'Next Keyboard' button"), forState: .Normal)
+        nextKeyboardButton.sizeToFit()
+        nextKeyboardButton.setTranslatesAutoresizingMaskIntoConstraints(false)
         
-        self.nextKeyboardButton.addTarget(self, action: "advanceToNextInputMode", forControlEvents: .TouchUpInside)
+        nextKeyboardButton.addTarget(self, action: "advanceToNextInputMode", forControlEvents: .TouchUpInside)
         
-        self.view.addSubview(self.nextKeyboardButton)
+        view.addSubview(nextKeyboardButton)
         
         
         
-        var nextKeyboardButtonLeftSideConstraint = NSLayoutConstraint(item: self.nextKeyboardButton, attribute: .Left, relatedBy: .Equal, toItem: self.view, attribute: .Left, multiplier: 1.0, constant: +10.0)
-        var nextKeyboardButtonBottomConstraint = NSLayoutConstraint(item: self.nextKeyboardButton, attribute: .Bottom, relatedBy: .Equal, toItem: self.view, attribute: .Bottom, multiplier: 1.0, constant: -10.0)
-        self.view.addConstraints([nextKeyboardButtonLeftSideConstraint, nextKeyboardButtonBottomConstraint])
+        var nextKeyboardButtonLeftSideConstraint = NSLayoutConstraint(item: nextKeyboardButton, attribute: .Left, relatedBy: .Equal, toItem: view, attribute: .Left, multiplier: 1.0, constant: +10.0)
+        var nextKeyboardButtonBottomConstraint = NSLayoutConstraint(item:nextKeyboardButton, attribute: .Bottom, relatedBy: .Equal, toItem: view, attribute: .Bottom, multiplier: 1.0, constant: -10.0)
+        view.addConstraints([nextKeyboardButtonLeftSideConstraint, nextKeyboardButtonBottomConstraint])
     }
     
     func addHideKeyboardButton() {
@@ -163,13 +165,14 @@ class KeyboardViewController: UIInputViewController {
     override func textDidChange(textInput: UITextInput) {
         // The app has just changed the document's contents, the document context has been updated.
         var textColor: UIColor
-        var proxy = self.textDocumentProxy as UITextDocumentProxy
+        var proxy = textDocumentProxy as UITextDocumentProxy
         if proxy.keyboardAppearance == UIKeyboardAppearance.Dark {
             textColor = UIColor.whiteColor()
         } else {
             textColor = UIColor.blackColor()
         }
-        self.nextKeyboardButton.setTitleColor(textColor, forState: .Normal)
+        nextKeyboardButton.setTitleColor(textColor, forState: .Normal)
     }
     
 }
+
