@@ -9,7 +9,6 @@
 import UIKit
 
 
-
 class KeyboardViewController: UIInputViewController {
     
     var nextKeyboardButton: UIButton!
@@ -18,18 +17,25 @@ class KeyboardViewController: UIInputViewController {
     var deleteButton: UIButton!
     var hideKeyboardButton: UIButton!
     
+    var customInterface: UIView!
+    
     init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+
+        var nib = UINib(nibName: "CustomKeyBoard", bundle: nil)
+        let objects = nib.instantiateWithOwner(self, options: nil)
+        customInterface = objects[0] as UIView
     }
     
     override func updateViewConstraints() {
         super.updateViewConstraints()
-        
         // Add custom view sizing constraints here
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.addSubview(customInterface)
         
         addKeyboardButtons()
     }
@@ -120,7 +126,7 @@ class KeyboardViewController: UIInputViewController {
     
     func addDelete() {
         deleteButton = UIButton.buttonWithType(.System) as UIButton
-        deleteButton.setTitle("Delete", forState: .Normal)
+        deleteButton.setTitle(" Delete ", forState: .Normal)
         deleteButton.sizeToFit()
         deleteButton.setTranslatesAutoresizingMaskIntoConstraints(false)
         deleteButton.addTarget(self, action: "didTapDelete", forControlEvents: .TouchUpInside)
@@ -151,6 +157,12 @@ class KeyboardViewController: UIInputViewController {
         var proxy = textDocumentProxy as UITextDocumentProxy
         
         proxy.deleteBackward()
+    }
+    
+    @IBAction func didTapWeheartSwift() {
+        var proxy = textDocumentProxy as UITextDocumentProxy
+        
+        proxy.insertText("We ❤ Swift")
     }
     
     override func didReceiveMemoryWarning() {

@@ -14,6 +14,7 @@
 		754B28BF194F872C0080E630 /* MorseCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754B28BE194F872C0080E630 /* MorseCodeTests.swift */; };
 		7574F498195C783900257266 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7574F497195C783900257266 /* KeyboardViewController.swift */; };
 		7574F49B195C783900257266 /* weheartswift.com.MorseCode.MorseCodeKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7574F493195C783900257266 /* weheartswift.com.MorseCode.MorseCodeKeyboard.appex */; };
+		75BA98C1195DCB38001D99E4 /* CustomKeyBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75BA98C0195DCB38001D99E4 /* CustomKeyBoard.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +48,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				7574F49B195C783900257266 /* weheartswift.com.MorseCode.MorseCodeKeyboard.appex in Embed App Extensions */
+				7574F49B195C783900257266 /* weheartswift.com.MorseCode.MorseCodeKeyboard.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,6 +68,7 @@
 		7574F493195C783900257266 /* weheartswift.com.MorseCode.MorseCodeKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = weheartswift.com.MorseCode.MorseCodeKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		7574F496195C783900257266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7574F497195C783900257266 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		75BA98C0195DCB38001D99E4 /* CustomKeyBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomKeyBoard.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,13 +80,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		754B28B5194F872C0080E630 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7550E127195C906600ECD823 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -163,6 +158,7 @@
 			children = (
 				7574F497195C783900257266 /* KeyboardViewController.swift */,
 				7574F495195C783900257266 /* Supporting Files */,
+				75BA98C0195DCB38001D99E4 /* CustomKeyBoard.xib */,
 			);
 			path = MorseCodeKeyboard;
 			sourceTree = "<group>";
@@ -192,8 +188,6 @@
 			dependencies = (
 				7574F49A195C783900257266 /* PBXTargetDependency */,
 				7574F49D195C783900257266 /* PBXTargetDependency */,
-				7550E131195C906600ECD823 /* PBXTargetDependency */,
-				7550E134195C906600ECD823 /* PBXTargetDependency */,
 			);
 			name = MorseCode;
 			productName = MorseCode;
@@ -251,9 +245,6 @@
 						CreatedOnToolsVersion = 6.0;
 						TestTargetID = 754B28A5194F872C0080E630;
 					};
-					7550E129195C906600ECD823 = {
-						CreatedOnToolsVersion = 6.0;
-					};
 					7574F492195C783900257266 = {
 						CreatedOnToolsVersion = 6.0;
 					};
@@ -296,17 +287,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7550E128195C906600ECD823 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7574F491195C783900257266 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75BA98C1195DCB38001D99E4 /* CustomKeyBoard.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,13 +312,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				754B28BF194F872C0080E630 /* MorseCodeTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7550E126195C906600ECD823 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
