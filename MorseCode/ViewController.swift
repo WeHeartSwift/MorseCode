@@ -8,12 +8,11 @@
 
 import UIKit
 
-Zip2
 
 class ViewController: UIViewController {
     
-    @IBOutlet var textField: UITextField
-    @IBOutlet var accessoryView: UIView
+    @IBOutlet var textField: UITextField!
+    @IBOutlet var accessoryView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

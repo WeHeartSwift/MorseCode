@@ -19,12 +19,16 @@ class KeyboardViewController: UIInputViewController {
     
     var customInterface: UIView!
     
-    init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
 
         var nib = UINib(nibName: "CustomKeyBoard", bundle: nil)
         let objects = nib.instantiateWithOwner(self, options: nil)
         customInterface = objects[0] as UIView
+    }
+
+    required init(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     override func updateViewConstraints() {
@@ -91,7 +95,7 @@ class KeyboardViewController: UIInputViewController {
         dotButton.setTranslatesAutoresizingMaskIntoConstraints(false)
         dotButton.addTarget(self, action: "didTapDot", forControlEvents: .TouchUpInside)
         
-        dotButton.titleLabel.font = UIFont.systemFontOfSize(32)
+        dotButton.titleLabel!.font = UIFont.systemFontOfSize(32)
         
         dotButton.backgroundColor = UIColor(white: 0.9, alpha: 1)
         dotButton.layer.cornerRadius = 5
@@ -111,7 +115,7 @@ class KeyboardViewController: UIInputViewController {
         dashButton.setTranslatesAutoresizingMaskIntoConstraints(false)
         dashButton.addTarget(self, action: "didTapDash", forControlEvents: .TouchUpInside)
         
-        dashButton.titleLabel.font = UIFont.systemFontOfSize(32)
+        dashButton.titleLabel!.font = UIFont.systemFontOfSize(32)
         
         dashButton.backgroundColor = UIColor(white: 0.9, alpha: 1)
         dashButton.layer.cornerRadius = 5
